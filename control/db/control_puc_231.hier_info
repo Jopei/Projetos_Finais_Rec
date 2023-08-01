@@ -1,0 +1,41 @@
+|control_puc_231
+nrst => pres_state~3.DATAIN
+clk => pres_state~1.DATAIN
+opcode[8] => ~NO_FANOUT~
+opcode[9] => ~NO_FANOUT~
+opcode[10] => ~NO_FANOUT~
+opcode[11] => ~NO_FANOUT~
+opcode[12] => ~NO_FANOUT~
+opcode[13] => ~NO_FANOUT~
+opcode[14] => ~NO_FANOUT~
+opcode[15] => ~NO_FANOUT~
+c_flag => ~NO_FANOUT~
+z_flag => ~NO_FANOUT~
+v_flag => ~NO_FANOUT~
+int_req => ~NO_FANOUT~
+reg_do_a_on_dext <= <GND>
+dext_on_dint <= <GND>
+alu_on_dint <= <GND>
+mux_sel <= <GND>
+reg_wr_ena <= <GND>
+flag_c_wr_ena <= <GND>
+flag_z_wr_ena <= <GND>
+flag_v_wr_ena <= <GND>
+set_gie <= <GND>
+clr_gie <= <GND>
+ir_wr_ena <= <GND>
+alu_op[0] <= alu_op[0].DB_MAX_OUTPUT_PORT_TYPE
+alu_op[1] <= alu_op[1].DB_MAX_OUTPUT_PORT_TYPE
+alu_op[2] <= alu_op[2].DB_MAX_OUTPUT_PORT_TYPE
+alu_op[3] <= alu_op[3].DB_MAX_OUTPUT_PORT_TYPE
+stack_push <= <GND>
+stach_pop <= <GND>
+pc_ctrl[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+pc_ctrl[1] <= pc_ctrl[1].DB_MAX_OUTPUT_PORT_TYPE
+pc_ctrl[2] <= pc_ctrl[2].DB_MAX_OUTPUT_PORT_TYPE
+mem_wr_ena <= <GND>
+mem_rd_ena <= <GND>
+inp <= <GND>
+outp <= <GND>
+
+

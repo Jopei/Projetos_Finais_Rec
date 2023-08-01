@@ -1,0 +1,6 @@
+
+State Machine - |control_puc_231|pres_state
+Name pres_state.fetch_dec_ex pres_state.fetch pres_state.rst 
+pres_state.rst 0 0 0 
+pres_state.fetch 0 1 1 
+pres_state.fetch_dec_ex 1 0 1 
