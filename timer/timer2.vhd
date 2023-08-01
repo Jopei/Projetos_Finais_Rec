@@ -1,0 +1,83 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity timer2 is 
+    generic (
+        base_addr : natural := 0 
+    );
+    port (
+        nrst      : in  std_logic;
+        clk_in    : in  std_logic;
+        abus      : in  std_logic_vector(7 downto 0);
+        dbus      : inout  std_logic_vector(7 downto 0);
+        wr_en     : in  std_logic;
+        rd_en     : in  std_logic;
+        tmr_irq   : out std_logic;
+        tcn_value : out std_logic_vector(7 downto 0);
+        tpr_value : out std_logic_vector(7 downto 0)
+    );
+end timer2;
+
+architecture Behavioral of timer2 is
+    signal ctr     : unsigned(7 downto 0);
+    signal TPRreg  : unsigned(7 downto 0);
+    signal TCNreg  : unsigned(7 downto 0);
+    signal TIF     : std_logic;
+    signal TENA    : std_logic;
+begin 
+    process(nrst, clk_in)
+    begin
+        if nrst = '0' then
+            TPRreg <= (others => '0');
+            TCNreg <= (others => '0');
+            ctr    <= (others => '0');
+            TIF    <= '0';
+        elsif rising_edge(clk_in) then
+            if rd_en = '1' then
+                if unsigned(abus) = to_unsigned(base_addr, abus'length) then
+                    dbus <= std_logic_vector(TPRreg);
+                elsif unsigned(abus) = to_unsigned(base_addr + 1, abus'length) then 
+                    dbus <= std_logic_vector(TCNreg);
+                else
+                    dbus <= (others => 'Z');
+                end if;
+            end if;
+            
+            if wr_en = '1' then 
+                if unsigned(abus) = to_unsigned(base_addr, abus'length) then
+                    TPRreg <= unsigned(dbus);
+                elsif unsigned(abus) = to_unsigned(base_addr + 1, abus'length) then
+                    TCNreg <= unsigned(dbus);
+                end if;
+            end if;
+            
+            if TENA = '1' then
+                if ctr = TPRreg then
+                    ctr <= (others => '0');
+                    TIF <= '1';
+                else
+                    ctr <= ctr + 1;
+                    TIF <= '0';
+                end if;    
+            else
+                ctr <= (others => '0');
+                TIF <= '0';
+            end if;
+        end if;
+    end process;
+    
+    -- Processo separado para atribuir os valores de TCNreg e TPRreg às saídas
+    process (clk_in)
+    begin
+        if rising_edge(clk_in) then
+            if rd_en = '1' then
+                if unsigned(abus) = to_unsigned(base_addr, abus'length) then
+                    tpr_value <= std_logic_vector(TPRreg);
+                elsif unsigned(abus) = to_unsigned(base_addr + 1, abus'length) then 
+                    tcn_value <= std_logic_vector(TCNreg);
+                end if;
+            end if;
+        end if;
+    end process;
+end Behavioral;

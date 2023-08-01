@@ -1,0 +1,470 @@
+Simulator report for timer
+Sun Jun 11 11:58:04 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 145 nodes    ;
+; Simulation Coverage         ;      45.75 % ;
+; Total Number of Transitions ; 4502         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      45.75 % ;
+; Total nodes checked                                 ; 145          ;
+; Total output ports checked                          ; 153          ;
+; Total output ports with complete 1/0-value coverage ; 70           ;
+; Total output ports with no 1/0-value coverage       ; 74           ;
+; Total output ports with no 1-value coverage         ; 82           ;
+; Total output ports with no 0-value coverage         ; 75           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |timer|dbus[0]~direct ; |timer|dbus[0]~direct ; out0             ;
+; |timer|dbus[1]~direct ; |timer|dbus[1]~direct ; out0             ;
+; |timer|dbus[2]~direct ; |timer|dbus[2]~direct ; out0             ;
+; |timer|dbus[3]~direct ; |timer|dbus[3]~direct ; out0             ;
+; |timer|dbus[4]~direct ; |timer|dbus[4]~direct ; out0             ;
+; |timer|dbus[5]~direct ; |timer|dbus[5]~direct ; out0             ;
+; |timer|dbus[6]~direct ; |timer|dbus[6]~direct ; out0             ;
+; |timer|dbus[7]~direct ; |timer|dbus[7]~direct ; out0             ;
+; |timer|TCNreg~0       ; |timer|TCNreg~0       ; out              ;
+; |timer|TCNreg~1       ; |timer|TCNreg~1       ; out              ;
+; |timer|TCNreg~2       ; |timer|TCNreg~2       ; out              ;
+; |timer|TCNreg~3       ; |timer|TCNreg~3       ; out              ;
+; |timer|TCNreg~4       ; |timer|TCNreg~4       ; out              ;
+; |timer|TCNreg~5       ; |timer|TCNreg~5       ; out              ;
+; |timer|TCNreg~6       ; |timer|TCNreg~6       ; out              ;
+; |timer|TCNreg~7       ; |timer|TCNreg~7       ; out              ;
+; |timer|TCNreg~8       ; |timer|TCNreg~8       ; out              ;
+; |timer|TCNreg~9       ; |timer|TCNreg~9       ; out              ;
+; |timer|TCNreg~10      ; |timer|TCNreg~10      ; out              ;
+; |timer|TCNreg~11      ; |timer|TCNreg~11      ; out              ;
+; |timer|TCNreg~12      ; |timer|TCNreg~12      ; out              ;
+; |timer|TCNreg~13      ; |timer|TCNreg~13      ; out              ;
+; |timer|TCNreg~14      ; |timer|TCNreg~14      ; out              ;
+; |timer|TCNreg~15      ; |timer|TCNreg~15      ; out              ;
+; |timer|dbus[0]~1      ; |timer|dbus[0]~1      ; out0             ;
+; |timer|dbus[0]~2      ; |timer|dbus[0]~2      ; out0             ;
+; |timer|dbus[0]~en     ; |timer|dbus[0]~en     ; regout           ;
+; |timer|dbus[1]~en     ; |timer|dbus[1]~en     ; regout           ;
+; |timer|dbus[2]~en     ; |timer|dbus[2]~en     ; regout           ;
+; |timer|dbus[3]~en     ; |timer|dbus[3]~en     ; regout           ;
+; |timer|dbus[4]~en     ; |timer|dbus[4]~en     ; regout           ;
+; |timer|dbus[5]~en     ; |timer|dbus[5]~en     ; regout           ;
+; |timer|dbus[6]~en     ; |timer|dbus[6]~en     ; regout           ;
+; |timer|dbus[7]~en     ; |timer|dbus[7]~en     ; regout           ;
+; |timer|clk_in         ; |timer|clk_in         ; out              ;
+; |timer|abus[0]        ; |timer|abus[0]        ; out              ;
+; |timer|abus[1]        ; |timer|abus[1]        ; out              ;
+; |timer|abus[2]        ; |timer|abus[2]        ; out              ;
+; |timer|abus[3]        ; |timer|abus[3]        ; out              ;
+; |timer|abus[4]        ; |timer|abus[4]        ; out              ;
+; |timer|abus[5]        ; |timer|abus[5]        ; out              ;
+; |timer|abus[6]        ; |timer|abus[6]        ; out              ;
+; |timer|abus[7]        ; |timer|abus[7]        ; out              ;
+; |timer|dbus[0]        ; |timer|dbus[0]        ; out              ;
+; |timer|dbus[0]        ; |timer|dbus[0]~result ; pin_out          ;
+; |timer|dbus[1]        ; |timer|dbus[1]        ; out              ;
+; |timer|dbus[1]        ; |timer|dbus[1]~result ; pin_out          ;
+; |timer|dbus[2]        ; |timer|dbus[2]        ; out              ;
+; |timer|dbus[2]        ; |timer|dbus[2]~result ; pin_out          ;
+; |timer|dbus[3]        ; |timer|dbus[3]        ; out              ;
+; |timer|dbus[3]        ; |timer|dbus[3]~result ; pin_out          ;
+; |timer|dbus[4]        ; |timer|dbus[4]        ; out              ;
+; |timer|dbus[4]        ; |timer|dbus[4]~result ; pin_out          ;
+; |timer|dbus[5]        ; |timer|dbus[5]        ; out              ;
+; |timer|dbus[5]        ; |timer|dbus[5]~result ; pin_out          ;
+; |timer|dbus[6]        ; |timer|dbus[6]        ; out              ;
+; |timer|dbus[6]        ; |timer|dbus[6]~result ; pin_out          ;
+; |timer|dbus[7]        ; |timer|dbus[7]        ; out              ;
+; |timer|dbus[7]        ; |timer|dbus[7]~result ; pin_out          ;
+; |timer|wr_en          ; |timer|wr_en          ; out              ;
+; |timer|rd_en          ; |timer|rd_en          ; out              ;
+; |timer|dbus[7]~18     ; |timer|dbus[7]~18     ; out0             ;
+; |timer|dbus[6]~19     ; |timer|dbus[6]~19     ; out0             ;
+; |timer|dbus[5]~20     ; |timer|dbus[5]~20     ; out0             ;
+; |timer|dbus[4]~21     ; |timer|dbus[4]~21     ; out0             ;
+; |timer|dbus[3]~22     ; |timer|dbus[3]~22     ; out0             ;
+; |timer|dbus[2]~23     ; |timer|dbus[2]~23     ; out0             ;
+; |timer|dbus[1]~24     ; |timer|dbus[1]~24     ; out0             ;
+; |timer|dbus[0]~25     ; |timer|dbus[0]~25     ; out0             ;
+; |timer|Equal1~0       ; |timer|Equal1~0       ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |timer|TPRreg~0           ; |timer|TPRreg~0           ; out              ;
+; |timer|TPRreg~1           ; |timer|TPRreg~1           ; out              ;
+; |timer|TPRreg~2           ; |timer|TPRreg~2           ; out              ;
+; |timer|TPRreg~3           ; |timer|TPRreg~3           ; out              ;
+; |timer|TPRreg~4           ; |timer|TPRreg~4           ; out              ;
+; |timer|TPRreg~5           ; |timer|TPRreg~5           ; out              ;
+; |timer|TPRreg~6           ; |timer|TPRreg~6           ; out              ;
+; |timer|TPRreg~7           ; |timer|TPRreg~7           ; out              ;
+; |timer|tpr_value[4]$latch ; |timer|tpr_value[4]$latch ; out              ;
+; |timer|tpr_value[3]$latch ; |timer|tpr_value[3]$latch ; out              ;
+; |timer|tpr_value[2]$latch ; |timer|tpr_value[2]$latch ; out              ;
+; |timer|tpr_value[1]$latch ; |timer|tpr_value[1]$latch ; out              ;
+; |timer|tpr_value[0]$latch ; |timer|tpr_value[0]$latch ; out              ;
+; |timer|TPRreg[7]          ; |timer|TPRreg[7]          ; regout           ;
+; |timer|TPRreg[6]          ; |timer|TPRreg[6]          ; regout           ;
+; |timer|TPRreg[5]          ; |timer|TPRreg[5]          ; regout           ;
+; |timer|TPRreg[4]          ; |timer|TPRreg[4]          ; regout           ;
+; |timer|TPRreg[3]          ; |timer|TPRreg[3]          ; regout           ;
+; |timer|TPRreg[2]          ; |timer|TPRreg[2]          ; regout           ;
+; |timer|TPRreg[1]          ; |timer|TPRreg[1]          ; regout           ;
+; |timer|TPRreg[0]          ; |timer|TPRreg[0]          ; regout           ;
+; |timer|TCNreg[7]          ; |timer|TCNreg[7]          ; regout           ;
+; |timer|TCNreg[6]          ; |timer|TCNreg[6]          ; regout           ;
+; |timer|TCNreg[5]          ; |timer|TCNreg[5]          ; regout           ;
+; |timer|TCNreg[4]          ; |timer|TCNreg[4]          ; regout           ;
+; |timer|TCNreg[3]          ; |timer|TCNreg[3]          ; regout           ;
+; |timer|TCNreg[2]          ; |timer|TCNreg[2]          ; regout           ;
+; |timer|TCNreg[1]          ; |timer|TCNreg[1]          ; regout           ;
+; |timer|tpr_value[6]$latch ; |timer|tpr_value[6]$latch ; out              ;
+; |timer|TCNreg[0]          ; |timer|TCNreg[0]          ; regout           ;
+; |timer|dbus[7]~reg0       ; |timer|dbus[7]~reg0       ; regout           ;
+; |timer|dbus[6]~reg0       ; |timer|dbus[6]~reg0       ; regout           ;
+; |timer|dbus[5]~reg0       ; |timer|dbus[5]~reg0       ; regout           ;
+; |timer|dbus[4]~reg0       ; |timer|dbus[4]~reg0       ; regout           ;
+; |timer|dbus[3]~reg0       ; |timer|dbus[3]~reg0       ; regout           ;
+; |timer|dbus[2]~reg0       ; |timer|dbus[2]~reg0       ; regout           ;
+; |timer|dbus[1]~reg0       ; |timer|dbus[1]~reg0       ; regout           ;
+; |timer|tpr_value[7]$latch ; |timer|tpr_value[7]$latch ; out              ;
+; |timer|tcn_value[0]$latch ; |timer|tcn_value[0]$latch ; out              ;
+; |timer|tcn_value[1]$latch ; |timer|tcn_value[1]$latch ; out              ;
+; |timer|tcn_value[2]$latch ; |timer|tcn_value[2]$latch ; out              ;
+; |timer|tcn_value[3]$latch ; |timer|tcn_value[3]$latch ; out              ;
+; |timer|tcn_value[4]$latch ; |timer|tcn_value[4]$latch ; out              ;
+; |timer|tcn_value[5]$latch ; |timer|tcn_value[5]$latch ; out              ;
+; |timer|tcn_value[6]$latch ; |timer|tcn_value[6]$latch ; out              ;
+; |timer|tcn_value[7]$latch ; |timer|tcn_value[7]$latch ; out              ;
+; |timer|dbus[0]~reg0       ; |timer|dbus[0]~reg0       ; regout           ;
+; |timer|dbus[0]~0          ; |timer|dbus[0]~0          ; out              ;
+; |timer|dbus[0]~3          ; |timer|dbus[0]~3          ; out              ;
+; |timer|dbus[1]~4          ; |timer|dbus[1]~4          ; out              ;
+; |timer|dbus[1]~5          ; |timer|dbus[1]~5          ; out              ;
+; |timer|dbus[2]~6          ; |timer|dbus[2]~6          ; out              ;
+; |timer|dbus[2]~7          ; |timer|dbus[2]~7          ; out              ;
+; |timer|dbus[3]~8          ; |timer|dbus[3]~8          ; out              ;
+; |timer|dbus[3]~9          ; |timer|dbus[3]~9          ; out              ;
+; |timer|dbus[4]~10         ; |timer|dbus[4]~10         ; out              ;
+; |timer|dbus[4]~11         ; |timer|dbus[4]~11         ; out              ;
+; |timer|dbus[5]~12         ; |timer|dbus[5]~12         ; out              ;
+; |timer|dbus[5]~13         ; |timer|dbus[5]~13         ; out              ;
+; |timer|dbus[6]~14         ; |timer|dbus[6]~14         ; out              ;
+; |timer|dbus[6]~15         ; |timer|dbus[6]~15         ; out              ;
+; |timer|dbus[7]~16         ; |timer|dbus[7]~16         ; out              ;
+; |timer|dbus[7]~17         ; |timer|dbus[7]~17         ; out              ;
+; |timer|tpr_value[5]$latch ; |timer|tpr_value[5]$latch ; out              ;
+; |timer|tmr_irq            ; |timer|tmr_irq            ; pin_out          ;
+; |timer|tcn_value[0]       ; |timer|tcn_value[0]       ; pin_out          ;
+; |timer|tcn_value[1]       ; |timer|tcn_value[1]       ; pin_out          ;
+; |timer|tcn_value[2]       ; |timer|tcn_value[2]       ; pin_out          ;
+; |timer|tcn_value[3]       ; |timer|tcn_value[3]       ; pin_out          ;
+; |timer|tcn_value[4]       ; |timer|tcn_value[4]       ; pin_out          ;
+; |timer|tcn_value[5]       ; |timer|tcn_value[5]       ; pin_out          ;
+; |timer|tcn_value[6]       ; |timer|tcn_value[6]       ; pin_out          ;
+; |timer|tcn_value[7]       ; |timer|tcn_value[7]       ; pin_out          ;
+; |timer|tpr_value[0]       ; |timer|tpr_value[0]       ; pin_out          ;
+; |timer|tpr_value[1]       ; |timer|tpr_value[1]       ; pin_out          ;
+; |timer|tpr_value[2]       ; |timer|tpr_value[2]       ; pin_out          ;
+; |timer|tpr_value[3]       ; |timer|tpr_value[3]       ; pin_out          ;
+; |timer|tpr_value[4]       ; |timer|tpr_value[4]       ; pin_out          ;
+; |timer|tpr_value[5]       ; |timer|tpr_value[5]       ; pin_out          ;
+; |timer|tpr_value[6]       ; |timer|tpr_value[6]       ; pin_out          ;
+; |timer|tpr_value[7]       ; |timer|tpr_value[7]       ; pin_out          ;
+; |timer|Equal0~0           ; |timer|Equal0~0           ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |timer|TPRreg~0           ; |timer|TPRreg~0           ; out              ;
+; |timer|TPRreg~1           ; |timer|TPRreg~1           ; out              ;
+; |timer|TPRreg~2           ; |timer|TPRreg~2           ; out              ;
+; |timer|TPRreg~3           ; |timer|TPRreg~3           ; out              ;
+; |timer|TPRreg~4           ; |timer|TPRreg~4           ; out              ;
+; |timer|TPRreg~5           ; |timer|TPRreg~5           ; out              ;
+; |timer|TPRreg~6           ; |timer|TPRreg~6           ; out              ;
+; |timer|TPRreg~7           ; |timer|TPRreg~7           ; out              ;
+; |timer|tpr_value[4]$latch ; |timer|tpr_value[4]$latch ; out              ;
+; |timer|tpr_value[3]$latch ; |timer|tpr_value[3]$latch ; out              ;
+; |timer|tpr_value[2]$latch ; |timer|tpr_value[2]$latch ; out              ;
+; |timer|tpr_value[1]$latch ; |timer|tpr_value[1]$latch ; out              ;
+; |timer|tpr_value[0]$latch ; |timer|tpr_value[0]$latch ; out              ;
+; |timer|TPRreg[7]          ; |timer|TPRreg[7]          ; regout           ;
+; |timer|TPRreg[6]          ; |timer|TPRreg[6]          ; regout           ;
+; |timer|TPRreg[5]          ; |timer|TPRreg[5]          ; regout           ;
+; |timer|TPRreg[4]          ; |timer|TPRreg[4]          ; regout           ;
+; |timer|TPRreg[3]          ; |timer|TPRreg[3]          ; regout           ;
+; |timer|TPRreg[2]          ; |timer|TPRreg[2]          ; regout           ;
+; |timer|TPRreg[1]          ; |timer|TPRreg[1]          ; regout           ;
+; |timer|TPRreg[0]          ; |timer|TPRreg[0]          ; regout           ;
+; |timer|TCNreg[7]          ; |timer|TCNreg[7]          ; regout           ;
+; |timer|TCNreg[6]          ; |timer|TCNreg[6]          ; regout           ;
+; |timer|TCNreg[5]          ; |timer|TCNreg[5]          ; regout           ;
+; |timer|TCNreg[4]          ; |timer|TCNreg[4]          ; regout           ;
+; |timer|TCNreg[3]          ; |timer|TCNreg[3]          ; regout           ;
+; |timer|TCNreg[2]          ; |timer|TCNreg[2]          ; regout           ;
+; |timer|TCNreg[1]          ; |timer|TCNreg[1]          ; regout           ;
+; |timer|tpr_value[6]$latch ; |timer|tpr_value[6]$latch ; out              ;
+; |timer|TCNreg[0]          ; |timer|TCNreg[0]          ; regout           ;
+; |timer|dbus[7]~reg0       ; |timer|dbus[7]~reg0       ; regout           ;
+; |timer|dbus[6]~reg0       ; |timer|dbus[6]~reg0       ; regout           ;
+; |timer|dbus[5]~reg0       ; |timer|dbus[5]~reg0       ; regout           ;
+; |timer|dbus[4]~reg0       ; |timer|dbus[4]~reg0       ; regout           ;
+; |timer|dbus[3]~reg0       ; |timer|dbus[3]~reg0       ; regout           ;
+; |timer|dbus[2]~reg0       ; |timer|dbus[2]~reg0       ; regout           ;
+; |timer|dbus[1]~reg0       ; |timer|dbus[1]~reg0       ; regout           ;
+; |timer|tpr_value[7]$latch ; |timer|tpr_value[7]$latch ; out              ;
+; |timer|tcn_value[0]$latch ; |timer|tcn_value[0]$latch ; out              ;
+; |timer|tcn_value[1]$latch ; |timer|tcn_value[1]$latch ; out              ;
+; |timer|tcn_value[2]$latch ; |timer|tcn_value[2]$latch ; out              ;
+; |timer|tcn_value[3]$latch ; |timer|tcn_value[3]$latch ; out              ;
+; |timer|tcn_value[4]$latch ; |timer|tcn_value[4]$latch ; out              ;
+; |timer|tcn_value[5]$latch ; |timer|tcn_value[5]$latch ; out              ;
+; |timer|tcn_value[6]$latch ; |timer|tcn_value[6]$latch ; out              ;
+; |timer|tcn_value[7]$latch ; |timer|tcn_value[7]$latch ; out              ;
+; |timer|dbus[0]~reg0       ; |timer|dbus[0]~reg0       ; regout           ;
+; |timer|dbus[0]~0          ; |timer|dbus[0]~0          ; out              ;
+; |timer|dbus[1]~4          ; |timer|dbus[1]~4          ; out              ;
+; |timer|dbus[2]~6          ; |timer|dbus[2]~6          ; out              ;
+; |timer|dbus[3]~8          ; |timer|dbus[3]~8          ; out              ;
+; |timer|dbus[4]~10         ; |timer|dbus[4]~10         ; out              ;
+; |timer|dbus[5]~12         ; |timer|dbus[5]~12         ; out              ;
+; |timer|dbus[6]~14         ; |timer|dbus[6]~14         ; out              ;
+; |timer|dbus[7]~16         ; |timer|dbus[7]~16         ; out              ;
+; |timer|tpr_value[5]$latch ; |timer|tpr_value[5]$latch ; out              ;
+; |timer|nrst               ; |timer|nrst               ; out              ;
+; |timer|tmr_irq            ; |timer|tmr_irq            ; pin_out          ;
+; |timer|tcn_value[0]       ; |timer|tcn_value[0]       ; pin_out          ;
+; |timer|tcn_value[1]       ; |timer|tcn_value[1]       ; pin_out          ;
+; |timer|tcn_value[2]       ; |timer|tcn_value[2]       ; pin_out          ;
+; |timer|tcn_value[3]       ; |timer|tcn_value[3]       ; pin_out          ;
+; |timer|tcn_value[4]       ; |timer|tcn_value[4]       ; pin_out          ;
+; |timer|tcn_value[5]       ; |timer|tcn_value[5]       ; pin_out          ;
+; |timer|tcn_value[6]       ; |timer|tcn_value[6]       ; pin_out          ;
+; |timer|tcn_value[7]       ; |timer|tcn_value[7]       ; pin_out          ;
+; |timer|tpr_value[0]       ; |timer|tpr_value[0]       ; pin_out          ;
+; |timer|tpr_value[1]       ; |timer|tpr_value[1]       ; pin_out          ;
+; |timer|tpr_value[2]       ; |timer|tpr_value[2]       ; pin_out          ;
+; |timer|tpr_value[3]       ; |timer|tpr_value[3]       ; pin_out          ;
+; |timer|tpr_value[4]       ; |timer|tpr_value[4]       ; pin_out          ;
+; |timer|tpr_value[5]       ; |timer|tpr_value[5]       ; pin_out          ;
+; |timer|tpr_value[6]       ; |timer|tpr_value[6]       ; pin_out          ;
+; |timer|tpr_value[7]       ; |timer|tpr_value[7]       ; pin_out          ;
+; |timer|Equal0~0           ; |timer|Equal0~0           ; out0             ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Jun 11 11:58:03 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off timer -c timer
+Info: Using vector source file "C:/Users/ana.ribeiro/Documents/Ana/timer/Waveform1.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Waveform1.vwf called timer.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|TCNreg[7]"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|TCNreg[6]"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|TCNreg[5]"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|TCNreg[4]"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|TCNreg[1]"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[0]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[1]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[2]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[3]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[4]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[5]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[6]~en"
+Warning: Found clock-sensitive change during active clock edge at time 305.0 ns on register "|timer|dbus[7]~en"
+Warning: Found logic contention at time 305.0 ns on bus node "|timer|dbus[1]~24"
+    Info: Node "dbus[1]" has logic level of 1
+    Info: Node "dbus[1]~5" has logic level of 0
+Warning: Found logic contention at time 305.0 ns on bus node "|timer|dbus[6]~19"
+    Info: Node "dbus[6]" has logic level of 1
+    Info: Node "dbus[6]~15" has logic level of 0
+Warning: Found logic contention at time 310.0 ns on bus node "|timer|dbus[5]~20"
+    Info: Node "dbus[5]" has logic level of 1
+    Info: Node "dbus[5]~13" has logic level of 0
+Warning: Found logic contention at time 310.0 ns on bus node "|timer|dbus[7]~18"
+    Info: Node "dbus[7]" has logic level of 1
+    Info: Node "dbus[7]~17" has logic level of 0
+Warning: Found logic contention at time 315.0 ns on bus node "|timer|dbus[0]~25"
+    Info: Node "dbus[0]" has logic level of 1
+    Info: Node "dbus[0]~3" has logic level of 0
+Warning: Found logic contention at time 315.0 ns on bus node "|timer|dbus[4]~21"
+    Info: Node "dbus[4]" has logic level of 1
+    Info: Node "dbus[4]~11" has logic level of 0
+Warning: Found clock-sensitive change during active clock edge at time 395.0 ns on register "|timer|TCNreg[3]"
+Warning: Found clock-sensitive change during active clock edge at time 395.0 ns on register "|timer|TCNreg[2]"
+Warning: Found logic contention at time 395.0 ns on bus node "|timer|dbus[1]~24"
+    Info: Node "dbus[1]" has logic level of 1
+    Info: Node "dbus[1]~5" has logic level of 0
+Warning: Found logic contention at time 395.0 ns on bus node "|timer|dbus[5]~20"
+    Info: Node "dbus[5]" has logic level of 1
+    Info: Node "dbus[5]~13" has logic level of 0
+Warning: Found logic contention at time 400.0 ns on bus node "|timer|dbus[2]~23"
+    Info: Node "dbus[2]" has logic level of 1
+    Info: Node "dbus[2]~7" has logic level of 0
+Warning: Found logic contention at time 400.0 ns on bus node "|timer|dbus[4]~21"
+    Info: Node "dbus[4]" has logic level of 1
+    Info: Node "dbus[4]~11" has logic level of 0
+Warning: Found logic contention at time 400.0 ns on bus node "|timer|dbus[7]~18"
+    Info: Node "dbus[7]" has logic level of 1
+    Info: Node "dbus[7]~17" has logic level of 0
+Warning: Found logic contention at time 405.0 ns on bus node "|timer|dbus[0]~25"
+    Info: Node "dbus[0]" has logic level of 1
+    Info: Node "dbus[0]~3" has logic level of 0
+Warning: Found logic contention at time 405.0 ns on bus node "|timer|dbus[3]~22"
+    Info: Node "dbus[3]" has logic level of 1
+    Info: Node "dbus[3]~9" has logic level of 0
+Warning: Found logic contention at time 405.0 ns on bus node "|timer|dbus[6]~19"
+    Info: Node "dbus[6]" has logic level of 1
+    Info: Node "dbus[6]~15" has logic level of 0
+Warning: Found clock-sensitive change during active clock edge at time 425.0 ns on register "|timer|TCNreg[0]"
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[0]~25"
+    Info: Node "dbus[0]" has logic level of 1
+    Info: Node "dbus[0]~3" has logic level of 0
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[2]~23"
+    Info: Node "dbus[2]" has logic level of 1
+    Info: Node "dbus[2]~7" has logic level of 0
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[3]~22"
+    Info: Node "dbus[3]" has logic level of 1
+    Info: Node "dbus[3]~9" has logic level of 0
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[5]~20"
+    Info: Node "dbus[5]" has logic level of 1
+    Info: Node "dbus[5]~13" has logic level of 0
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[6]~19"
+    Info: Node "dbus[6]" has logic level of 1
+    Info: Node "dbus[6]~15" has logic level of 0
+Warning: Found logic contention at time 425.0 ns on bus node "|timer|dbus[7]~18"
+    Info: Node "dbus[7]" has logic level of 1
+    Info: Node "dbus[7]~17" has logic level of 0
+Warning: Found logic contention at time 435.0 ns on bus node "|timer|dbus[1]~24"
+    Info: Node "dbus[1]" has logic level of 1
+    Info: Node "dbus[1]~5" has logic level of 0
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      45.75 %
+Info: Number of transitions in simulation is 4502
+Info: Vector file Waveform1.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Sun Jun 11 11:58:04 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
